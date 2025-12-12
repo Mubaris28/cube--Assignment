@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Shop - GTG Perfumes | Premium Fragrances & Subscriptions</title>
+    <meta name="description" content="Shop premium GTG Perfumes fragrances, subscriptions, and gift sets. Choose from Original, Lily, and Rose fragrances with flexible subscription options.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Oxanium:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"><a href="index.html">GTG</a></div>
+                <nav class="nav" id="mainNav">
+                    <button class="nav-close" id="navClose" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="nav-item-dropdown">
+                            <a href="shop.html" class="dropdown-toggle">Shop<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown-arrow"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="shop.html">All Products</a></li>
+                                <li><a href="shop.html#fragrances">Fragrances</a></li>
+                                <li><a href="shop.html#subscriptions">Subscriptions</a></li>
+                                <li><a href="shop.html#gifts">Gift Sets</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shop.html#fragrances">Fragrances</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-icon" aria-label="Search">
+                        <svg width="26.712371826171875" height="26.71797752380371" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#032E15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <a href="shop.html" class="btn-primary btn-header">Shop Now</a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 300px; padding: 100px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-heading">Shop GTG Perfumes</h1>
+                    <p class="product-description" style="color: #032E15; font-size: 18px; max-width: 600px;">
+                        Discover our premium fragrance collection and subscription options.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section" id="fragrances">
+        <div class="container">
+            <div class="product-wrapper">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image-container">
+                        <button class="gallery-arrow gallery-arrow-left" aria-label="Previous image">
+                            <img src="assets/images/gtg-perfumes/left-arrow.png" alt="Previous">
+                        </button>
+                        <img src="assets/images/gtg-perfumes/product_slider_main.png" alt="GTG Perfume"
+                            class="main-image" id="mainImage">
+                        <button class="gallery-arrow gallery-arrow-right" aria-label="Next image">
+                            <img src="assets/images/gtg-perfumes/right-arrow.png" alt="Next">
+                        </button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                            <span class="dot" data-index="4"></span>
+                            <span class="dot" data-index="5"></span>
+                            <span class="dot" data-index="6"></span>
+                            <span class="dot" data-index="7"></span>
+                        </div>
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="assets/images/gtg-perfumes/thumbnails/thumbnail_1.png" alt="Thumbnail 1"
+                            class="thumbnail active" data-index="0">
+                        <img src="assets/images/gtg-perfumes/thumbnails/thumbnail-2.png" alt="Thumbnail 2"
+                            class="thumbnail" data-index="1">
+                        <img src="assets/images/gtg-perfumes/thumbnails/thumbnail_3.png" alt="Thumbnail 3"
+                            class="thumbnail" data-index="2">
+                        <img src="assets/images/gtg-perfumes/thumbnails/thumbnail_4.png" alt="Thumbnail 4"
+                            class="thumbnail" data-index="3">
+                        <img src="assets/images/gtg-perfumes/thumbnails/thumbnail_5.png" alt="Thumbnail 5"
+                            class="thumbnail" data-index="4">
+                        <img src="assets/images/gtg-perfumes/thumbnails/thumbnail_6.png" alt="Thumbnail 6"
+                            class="thumbnail" data-index="5">
+                        <img src="assets/images/gtg-perfumes/thumbnails/thumbnail_7.png" alt="Thumbnail 7"
+                            class="thumbnail" data-index="6">
+                        <img src="assets/images/gtg-perfumes/thumbnails/thumbnail_8.png" alt="Thumbnail 8"
+                            class="thumbnail" data-index="7">
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h2 class="product-title">GTG Perfumes</h2>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                        <span class="rating-text">4.7 (999+ reviews)</span>
+                    </div>
+                    <p class="product-description">Experience the timeless allure backed by modern artistry, captured in
+                        every bottle of our fragrance. Crafted for those who seek to elevate their essence with purpose
+                        and sophistication.</p>
+
+                    <!-- Subscription Options -->
+                    <div class="subscription-options" id="subscriptions">
+                        <div class="most-popular-badge">Most Popular</div>
+
+                        <!-- Single Subscription -->
+                        <div class="subscription-option">
+                            <label class="radio-label">
+                                <input type="radio" name="subscription" value="single" class="radio-input" checked>
+                                <span class="radio-custom"></span>
+                                <span class="subscription-name">Single Subscription</span>
+                                <span class="subscription-price">
+                                    <span class="current-price">$99.99</span>
+                                    <span class="original-price">$146</span>
+                                </span>
+                            </label>
+                            <div class="subscription-details active" id="singleDetails">
+                                <div class="fragrance-selection">
+                                    <h4>Choose a Fragrance</h4>
+                                    <div class="fragrance-options">
+                                        <label class="fragrance-option">
+                                            <span class="best-seller-badge">BEST-SELLER</span>
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance" value="original"
+                                                    class="fragrance-radio" checked>
+                                                <span class="fragrance-name">Original</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/original/og.png"
+                                                    alt="Original">
+                                            </div>
+                                        </label>
+                                        <label class="fragrance-option">
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance" value="lily"
+                                                    class="fragrance-radio">
+                                                <span class="fragrance-name">Lily</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/lilly/lilly.png"
+                                                    alt="Lily">
+                                            </div>
+                                        </label>
+                                        <label class="fragrance-option">
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance" value="rose"
+                                                    class="fragrance-radio">
+                                                <span class="fragrance-name">Rose</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/rose/rose.png"
+                                                    alt="Rose">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="whats-included">
+                                    <h4>What's Included:</h4>
+                                    <div class="included-options">
+                                        <div class="included-option">
+                                            <h5>Every 30 Days</h5>
+                                            <img src="assets/images/gtg-perfumes/single_sub/fragrance/original/og.png"
+                                                alt="Every 30 Days">
+                                        </div>
+                                        <div class="included-option">
+                                            <h5>One Time <span class="free-badge">(Free)</span></h5>
+                                            <div class="one-time-images">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/original/og.png"
+                                                    alt="Original">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/lilly/lilly.png"
+                                                    alt="Lily">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/rose/rose.png"
+                                                    alt="Rose">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="subscription-features">
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png" alt="checkmark"> 1 Bottle
+                                        Shipped Monthly</li>
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png"
+                                            alt="checkmark"><strong>Free</strong> Sampler for Original, Lily And Rose
+                                        Fragrances</li>
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png" alt="checkmark">50% OFF
+                                        Shipping</li>
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png" alt="checkmark">Pause Or
+                                        Cancel Anytime After 3 Months Minimum</li>
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png" alt="checkmark"> 28 Day
+                                        Money Back Guarantee*</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Double Subscription -->
+                        <div class="subscription-option">
+                            <label class="radio-label">
+                                <input type="radio" name="subscription" value="double" class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="subscription-name">Double Subscription</span>
+                                <span class="subscription-price">
+                                    <span class="current-price">$169.99</span>
+                                    <span class="original-price">$146</span>
+                                </span>
+                            </label>
+                            <div class="subscription-details" id="doubleDetails">
+                                <div class="fragrance-selection">
+                                    <h4>Choose Fragrance 1</h4>
+                                    <div class="fragrance-options">
+                                        <label class="fragrance-option">
+                                            <span class="best-seller-badge">BEST-SELLER</span>
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance1" value="original"
+                                                    class="fragrance-radio" checked>
+                                                <span class="fragrance-name">Original</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/original/og.png"
+                                                    alt="Original">
+                                            </div>
+                                        </label>
+                                        <label class="fragrance-option">
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance1" value="lily"
+                                                    class="fragrance-radio">
+                                                <span class="fragrance-name">Lily</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/lilly/lilly.png"
+                                                    alt="Lily">
+                                            </div>
+                                        </label>
+                                        <label class="fragrance-option">
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance1" value="rose"
+                                                    class="fragrance-radio">
+                                                <span class="fragrance-name">Rose</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/rose/rose.png"
+                                                    alt="Rose">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="fragrance-selection">
+                                    <h4>Choose Fragrance 2</h4>
+                                    <div class="fragrance-options">
+                                        <label class="fragrance-option">
+                                            <span class="best-seller-badge">BEST-SELLER</span>
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance2" value="original"
+                                                    class="fragrance-radio" checked>
+                                                <span class="fragrance-name">Original</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/original/og.png"
+                                                    alt="Original">
+                                            </div>
+                                        </label>
+                                        <label class="fragrance-option">
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance2" value="lily"
+                                                    class="fragrance-radio">
+                                                <span class="fragrance-name">Lily</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/lilly/lilly.png"
+                                                    alt="Lily">
+                                            </div>
+                                        </label>
+                                        <label class="fragrance-option">
+                                            <div class="fragrance-header">
+                                                <input type="radio" name="fragrance2" value="rose"
+                                                    class="fragrance-radio">
+                                                <span class="fragrance-name">Rose</span>
+                                            </div>
+                                            <div class="fragrance-image-wrapper">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/rose/rose.png"
+                                                    alt="Rose">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="whats-included">
+                                    <h4>What's Included:</h4>
+                                    <div class="included-options">
+                                        <div class="included-option">
+                                            <h5>Every 30 Days</h5>
+                                            <img src="assets/images/gtg-perfumes/single_sub/fragrance/original/og.png"
+                                                alt="Every 30 Days">
+                                        </div>
+                                        <div class="included-option">
+                                            <h5>One Time <span class="free-badge">(Free)</span></h5>
+                                            <div class="one-time-images">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/original/og.png"
+                                                    alt="Original">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/lilly/lilly.png"
+                                                    alt="Lily">
+                                                <img src="assets/images/gtg-perfumes/single_sub/fragrance/rose/rose.png"
+                                                    alt="Rose">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="subscription-features">
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png" alt="checkmark"> 1 Bottle
+                                        Shipped Monthly</li>
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png"
+                                            alt="checkmark"><strong>Free</strong> Sampler for Original, Lily And Rose
+                                        Fragrances</li>
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png" alt="checkmark">50% OFF
+                                        Shipping</li>
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png" alt="checkmark">Pause Or
+                                        Cancel Anytime After 3 Months Minimum</li>
+                                    <li><img src="assets/images/gtg-perfumes/SealCheck.png" alt="checkmark"> 28 Day
+                                        Money Back Guarantee*</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-add-cart" id="addToCartBtn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-logo">GTG</h3>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="shop.html#fragrances">Fragrances</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <img src="assets/images/gtg-perfumes/social-icons/Facebook.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <img src="assets/images/gtg-perfumes/social-icons/Instagram.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" aria-label="X (Twitter)">
+                            <img src="assets/images/gtg-perfumes/social-icons/X.png" alt="X">
+                            <span>X</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column newsletter">
+                    <p class="newsletter-text">Join our newsletter to stay up to date on features and releases.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                    <p class="newsletter-disclaimer">By subscribing you agree to with our <a href="#privacy">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="search-close" id="searchClose" aria-label="Close search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search for fragrances, products..." autofocus>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
